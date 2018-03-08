@@ -1,0 +1,24 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10">
+            <div class="login-title"><span style="font-size:20px;" class="glyphicon glyphicon-list"></span> Lista de Usuários</div>
+            <div class="text-info">Todos os usuários abaixos estão ativos no servidor. O botão amarelo serve para modificar e o vermelho para excluir.</div>&nbsp;
+            <div align="left"><button type="button" class="btn btn-success" onclick="carregarConteudo('usuario/cadastro.html');">Cadastrar Novo</button></div>&nbsp;
+            <table class="display nowrap dataTable dtr-inline" id="tblListarUsuarios">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Login</th>
+                        <th>Senha</th>                        
+                        <th>Status</th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody id="tbrUsuario"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    carregarPaginaUsuario();    
+</script>

@@ -1,0 +1,46 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10">
+            <div class="login-title"><span style="font-size:20px;" class="glyphicon glyphicon-list"></span> Lista de Arquivos</div>
+            <div class="text-info">Selecione um cliente para ver todos os arquivos do cliente selecionado.</div>&nbsp;
+            <div class="form-group" id="selectAdm">
+                <label for="forCliente">Cliente:</label>
+                <select class="form-control" id="selCliente" style="max-width:15%; display: inline"></select>
+                <label for="forAno" style="margin-left: 10px">Ano:</label>
+                <input type='number' id='txtAno' class='form-control' maxlength='4' style="max-width:15%; display: inline">
+                <label for="forMes" style="margin-left: 10px">Mês:</label>
+                <select class="form-control" id="selMesFiltro" style="max-width:15%; display: inline"></select>
+                <label for="forCategoria" style="margin-left: 10px">Categoria:</label>
+                <select class="form-control" id="selCategoriaFiltro" style="max-width:15%; display: inline"></select>
+                <button onclick="aplicarFiltroArquivoAdm()" id="aplicarFiltro" class="btn btn-primary">Buscar</button>
+                <button id="btnEnviarArquivo" style="float: right" type="button" class="btn btn-success" onclick="setarUsuario($('#selCliente').val()); carregarConteudo('arquivo/cadastrar.html');">Enviar Novo</button>
+            </div>
+            <div class="form-group" id="selectUsuario">
+                <label for="forAno">Ano:</label>
+                <input type='number' id='txtAnoUsuario' class='form-control' maxlength='4' style="max-width:15%; display: inline">
+                <label for="forMes" style="margin-left: 10px">Mês:</label>
+                <select class="form-control" id="selMesFiltroUsuario" style="max-width:15%; display: inline"></select>
+                <button onclick="aplicarFiltroArquivoUsuario()" id="aplicarFiltro" class="btn btn-primary">Buscar</button>
+            </div>
+            <table class="display nowrap dataTable dtr-inline" id="tblListarArquivos">
+                <thead>
+                    <tr>
+                        <th>#</th> 
+                        <th>Nome</th>
+                        <th>Cliente</th>
+                        <th>Categoria</th>
+                        <th>Ano</th>
+                        <th>Mês</th>
+                        <th>Player</th>
+                        <th></th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody id="tbrArquivos"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    carregarPaginaArquivo();
+</script>

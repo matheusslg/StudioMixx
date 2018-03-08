@@ -1,0 +1,35 @@
+﻿<div id="returnScript"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10">
+            <div class="login-title"><span style="font-size:20px;" class="glyphicon glyphicon-cloud-upload"></span> Enviar Arquivos</div>
+            <div class="text-info">Selecione o cliente, os arquivos que deseja enviar e a categoria de cada arquivo.</div>&nbsp;            
+                <div class="form-group">
+                    <label for="forCliente">Selecione um cliente:</label>
+                    <select class="form-control" id="selCliente" style="max-width:30%;">
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Selecione os Arquivos</label>
+                    <input type="file" id="btnArquivos" onchange="selecionarArquivos()" multiple="multiple">&nbsp;
+                    <p style="" id="tabelaArquivos"></p>
+                </div>               
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="checkArquivos"> Marque este campo se você está certo dos arquivos que está enviando.
+                    </label>
+                </div>
+                <div id="msgUpload"></div>
+                <button onclick="uploadArquivos()" class="btn btn-success">Enviar</button>
+                <button onclick="carregarConteudo('arquivo/listar.html')" class="btn btn-danger">Cancelar</button>            
+        </div>
+    </div>
+</div>
+<script>       
+    carregarSelectClienteInserir();
+    //USANDO FOREVER
+    //https://blog.nodejitsu.com/keep-a-nodejs-server-up-with-forever/
+    
+</script>

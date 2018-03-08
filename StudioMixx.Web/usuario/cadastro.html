@@ -1,0 +1,29 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10">
+            <div class="login-title"><span style="font-size:20px;" class="glyphicon glyphicon-user"></span> Cadastrar Usuário</div>
+            <div class="text-info">Preencha os campos abaixo com os dados do usuário.</div>&nbsp;
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="form-group">
+                <label for="exampleInputUsuario">Usuário</label>
+                <input type="email" class="form-control" id="txtLogin" placeholder="Usuário">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control" id="txtSenha" placeholder="Senha">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" id="chkAdministrador">Administrador</label>
+            </div>
+            <div id="msgUsuario"></div>
+            <div id="botoesCategoria">
+                <button type="button" class="btn btn-success" onclick="inserirUsuario($('#txtLogin').val(), $('#txtSenha').val(), $('#boolAdm').val());">Gravar</button> 
+                <button onclick="carregarConteudo('usuario/listar.html')" class="btn btn-danger">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    verificarCadastroUsuario();
+</script>

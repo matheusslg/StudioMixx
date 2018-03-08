@@ -1,0 +1,23 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10">
+            <div class="login-title" id="txtNovaCat"><span style="font-size:20px;" class="glyphicon glyphicon-indent-left"></span> Nova Categoria</div>
+            <div class="text-info" id="txtDescCat">Crie uma nova categoria abaixo.</div>&nbsp;
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputDescricao">Nome</label>
+                    <input type="text" class="form-control" id="txtcategoria" placeholder="Nome">
+                </div>
+                <div id="msgCategoria"></div>
+                <button type="button" class="btn btn-success" onclick="inserirCategoria($('#txtcategoria').val());">Gravar</button>
+                <button onclick="carregarConteudo('categoria/listar.html')" class="btn btn-danger">Cancelar</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    verificarCadastroCategoria();
+</script>
+

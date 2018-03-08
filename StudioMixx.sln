@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "StudioMixx.Web", "StudioMixx.Web", "{2CABBF65-3332-4D33-A59C-0F031C67EA90}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60261"
+		Debug.AspNetCompiler.PhysicalPath = "StudioMixx.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60261\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60261"
+		Release.AspNetCompiler.PhysicalPath = "StudioMixx.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60261\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60261"
+		SlnRelativePath = "StudioMixx.Web\"
+	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "StudioMixx.Node", "StudioMixx.Node\StudioMixx.Node.njsproj", "{1552DBEE-CAC3-45D1-A377-463041C7F3BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CABBF65-3332-4D33-A59C-0F031C67EA90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CABBF65-3332-4D33-A59C-0F031C67EA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CABBF65-3332-4D33-A59C-0F031C67EA90}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CABBF65-3332-4D33-A59C-0F031C67EA90}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{1552DBEE-CAC3-45D1-A377-463041C7F3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1552DBEE-CAC3-45D1-A377-463041C7F3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1552DBEE-CAC3-45D1-A377-463041C7F3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1552DBEE-CAC3-45D1-A377-463041C7F3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://omegarepositorio.visualstudio.com/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = StudioMixx.Web
+		SccProjectName1 = StudioMixx.Web
+		SccLocalPath1 = StudioMixx.Web
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = StudioMixx.Node\\StudioMixx.Node.njsproj
+		SccProjectName2 = StudioMixx.Node
+		SccLocalPath2 = StudioMixx.Node
+	EndGlobalSection
+EndGlobal

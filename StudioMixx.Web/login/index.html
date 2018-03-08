@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Studio Mixx - Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">    
+    <link href="../css/sweetalert.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sweetalert.min.js"></script>    
+    <script src="../js/models/token.js"></script>
+    
+    <script src="login.js"></script>    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+                <div class="account-wall">
+                    <div id="my-tab-content" class="tab-content">
+                        <div class="tab-pane active" id="login">
+                            <div align="center"><img src="../imagens/logo.png" width="40%" alt=""></div>&nbsp;
+                            <div class="form-signin" action="" method="get">
+                                <input type="text" id="txtUsuario" class="form-control" placeholder="Usuário" required autofocus>
+                                <input type="password" id="txtSenha" class="form-control" placeholder="Senha" required>
+                                <input type="button" class="btn btn-lg btn-default btn-block" value="Conectar" id="btnLogin" onclick="encaminhar();" />
+                                <div class="text-center" style="padding-top: 20px"><a href="http://studiomixx.com.br/">← Voltar para Studio Mixx</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

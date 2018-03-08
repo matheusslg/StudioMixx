@@ -1,0 +1,22 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-10">
+            <div class="login-title"><span style="font-size:20px;" class="glyphicon glyphicon-indent-left"></span> Categorias</div>
+            <div class="text-info">Abaixo estão todas as categorias cadastradas no seu site. O botão amarelo serve para modificar e o vermelho para excluir.</div>&nbsp;
+            <div align="left"><button type="button" class="btn btn-success" onclick="carregarConteudo('categoria/cadastrar.html');">Cadastrar Nova</button></div>&nbsp;
+            <table class="display nowrap dataTable dtr-inline" id="tblListarCategorias">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody id="tbrCategorias"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    carregarPaginaCategoria();
+</script>
